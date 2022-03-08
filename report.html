@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>A minha primeira pagina</title>
+    </head> 
+    <body>
+        <h1>A Internet e a Web</h1>
+        <p> <a href="index.html">Programação Web</a>  
+            <a href="report.html">A Internet e a Web</a>
+        </p>
+           
+        <h3>Informações da página Report:</h3>
+        <ul>
+            <li>Alojamento de página Web na cloud;</li>
+            <li>Conhecer a Internet;</li>
+            <li>Acesso via HTTP à minha página Web;</li>
+            <li>Página Web (report.html).</li>
+        </ul>
+        <br>
+
+        
+        <h2>Alojamento de página Web na cloud</h2>
+        <ol>
+            <li>No início deste relatório foi nos pedido que criássemos um ficheiro index.html, escrever e analisar
+                o código fonte em questão;</li>
+            <li>Em seguida, criou-se um repositório no GitHub com o nome pw-lab1 de modo a guardar o código
+                elaborado durante a execução dos exercícios;</li>
+            <li>Depois criou-se uma conta no Heroku (plataforma para alojamento de aplicações na cloud);</li>
+            <li>Por fim, conectou-se a conta do GitHub à conta do Heroku.</li>    
+        </ol>
+        <br>
+
+        <h2>Conhecer a Internet</h2>
+        <ol>
+            <li>Endereços IP:</li>
+                <ul>Endereço IP do computador:</ul>
+                <img src="images/DNS LOOKUP.png">
+                
+                <br>
+                <br>
+
+                <ul>Mapa com zoom máximo:</ul>
+                <img src="images/Mapa Pequeno.png">
+
+                <br>
+                <br>
+
+                <ul>Endereço IP Heroku:</ul>
+                <img src="images/Mapa Site.png">
+            
+            <br>
+            <br>
+            <br>
+
+            <li>Percurso:</li>
+            <p> Traceroute (comando tracert) é uma ferramenta de diagnóstico que rastreia a rota que os pacotes IP 
+                fazem, desde o seu computador até um endereço IP destino/ou URL que especifique. Este 
+                identifica os routers pelos quais os pacotes passam até o seu destino, indicando o tempo que 
+                demoram por "salto" entre router.
+            </p>
+                <ul>Traceroute:</ul>
+                <img src="images/Tracert IP.png">
+
+                <br>
+                <br>
+            
+            <p> Utilizou-se a ferramenta GeoTraceroute para visualizar graficamente por onde passam os pacotes IP,
+                 até chegar ao seu servidor Heroku. Escolhi como origem (source) Portugal, e como 
+                 destino o URL do site.</p> 
+            
+            <ul>GeoTraceroute:</ul>
+            <img src="images/Mapa Terra.png">
+                
+        </ol>
+
+        <br>
+
+        <h2>Acesso via HTTP à minha página Web</h2>
+        <ol>
+            <li>HTTP:</li>
+            <p>O protocolo de troca de mensagens entre um cliente e um servidor Web é o HTTP. 
+                Um Web browser (Chrome, Safari, Firefox, etc) é uma aplicação que corre numa máquina "cliente" 
+                (o seu portátil por exemplo) e é capaz de enviar um pedido usando o protocolo HTTP a um servidor 
+                Web:
+                <br>
+                <br>
+                -  O cliente pode pedir uma determinada página Web através de uma mensagem HTTP GET. 
+                O servidor Web irá responder-lhe a esse pedido, enviando os conteúdos correspondentes. Tipicamente 
+                é recebido um ficheiro HTML juntamente com algumas imagens e outros ficheiros auxiliares, sendo o
+                browser capaz de representar visualmente o conteúdo.
+                <br>
+                -  O cliente pode também enviar ao servidor Web dados que preencheu por exemplo num formulário, 
+                através de uma mensagem HTTP POST. Esta é a arquitetura cliente-servidor.
+            </p>
+                <br>
+                Obtemos o seguinte:
+                <img src="images/HTTP.png">
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+            <li>Inspect</li>
+            <p>Todos os browsers têm uma ferramenta (browser developer tool) que permite inspecionar ficheiros
+                 descarregados pelo browser, permitindo analisar uma grande variedade de informação.
+                <br>
+                Inspecionando o ficheiro, obtive a seguinte informação:
+                <ol>
+                    <li>Header</li>
+                    <img src="images/imagem cabeçalho.png">
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <li>Timing</li>
+                    <img src="images/imagem temporizacao.png">
+                </ol>
+            </p>
+                 
+        </ol>
+
+        <br>
+        <br>
+
+        <h2>Página Web (report.html)</h2>
+        <p><img src="images/paginareport.png"></p>
+        
+
+    </body> 
+</html>
