@@ -1,0 +1,69 @@
+* {
+    font-family: 'Syne Mono', monospace;
+}
+
+body {
+    background-color:azure;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    background-color: antiquewhite;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+a {
+    color: rgba(9, 255, 0, 0.854);
+}
+
+#Foto {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Video {
+    font-weight: bold;
+}
+
+.Poema {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a[target ="_top"] {
+    background-color: orangered;
+}
+
+a[target="_blank"] {
+    color: grey;
+}
+
+a:link {
+    color: red;
+}
+  
+a:visited {
+    color: green;
+}
+  
+a:hover {
+    color: goldenrod;
+}
+  
+a:active {
+    color: blue;
+}
+
+section p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section > p {
+    background-color: blue;
+}
+
+section ~ p {
+    color: grey;
+}

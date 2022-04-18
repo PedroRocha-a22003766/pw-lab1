@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Pedro Rocha">
+        <meta name="keywords" content="Localização e Informação de Sydney">
+        <meta name="description" content="Website sobre Sydney">
+        <link rel="shortcut icon" type="image/x-icon" href="images/Android-Browser.ico"/>
+        <link rel="stylesheet" href="estilos.css">
+        <title>Sydney</title>
+    </head>
+    <body>
+        <header>
+            <figcaption>
+                <h1><b>Sydney</b></h1>
+                <img src="images/imagemsidney.jpg" alt="Sidney">
+            </figcaption>
+        </header>
+        <br>
+
+        <nav>
+            <a href="../index.html" target="_top">🏡Home</a>
+            <a href="index.html">🎬Introdução</a>
+            <a href="local.html">🗺️Localização</a>
+            <a href="multimedia.html">📷Multimedia</a>
+            <a href="info.html">📄Informação</a>
+            <a href="html5-css.html">🎓HTML5 e CSS</a>
+        </nav>
+        <br>
+
+        <main>
+            <h3>Quizz</h3>
+            <p>Nesta página será feito um quizz para testar se o utilizador conhece bem a cidade de Sidney 
+                que a página apresenta.</p>
+            
+            <form method="POST" action="mailto: pedro.mgmrocha@gmail.com" enctype="multipart/form-data">
+                <fieldset style="background-color: brown;">
+                    <legend>Quizz sobre Sidney</legend>
+
+                   <fieldset style="background-color: coral;">
+                       <legend>info</legend>
+                       <label for="nome">Nome: </label>
+                       <br>
+                       <input type="text" id="nome" name="nome" placeholder="Insira o seu nome" autofocus required>
+                       <br>
+
+                       <label for="apelido">Apelido: </label>
+                       <br>
+                       <input type="text" id="apelido" name="apelido" placeholder="Insira o seu apelido" required>
+                       <br>
+
+                       <label for="email">Email: </label>
+                       <br>
+                       <input type="email" id="email" name="email" placeholder="Insira o seu email" autocomplete="off" required>
+                       <br>
+                   </fieldset>
+                   
+                   <fieldset style="background-color: coral;">
+                       <legend>perguntas</legend>
+                       <ol>
+                        <li>
+                            <p>Qual a população de Sydney? (aproximadamente)</p>
+                            <label for="população">População: </label>
+                            <input type="number" id="população" name="população" min="0" max="10" value="2" required> milhões de habitantes.
+                            <br><br>
+                        </li>
+
+                        <li>
+                            <p>A que país pertence a cidade de Sydney?</p>
+                            <input type="radio" id="nova zelândia" name="paísSydney" value="nova zelândia">
+                            <label for="nova zelândia">Nova Zelândia</label>
+                            <br>
+                            <input type="radio" id="papua nova guiné" name="paísSydney" value="papua nova guiné">
+                            <label for="papua nova guiné">Papua Nova Guiné</label>
+                            <br>
+                            <input type="radio" id="austrália" name="paísSydney" value="austrália">
+                            <label for="austrália">Austrália</label>
+                            <br>
+                            <input type="radio" id="japão" name="paísSydney" value="japão">
+                            <label for="japão">Japão</label>
+                            <br><br>
+                        </li>
+
+                        <li>
+                            <p>Em que ano foi descoberto Sydney?</p>
+                            <label for="date">Ano de </label>
+                            <input type="date" id="datemin" name="date" min="1700-01-01" max="1800-01-01"> (basta indicar o ano corretamente).<br><br>
+                        </li>
+
+                        <li>
+                            <p>Quais são os 6 estados pelo qual é constituído a Austrália?</p>
+                            <input type="checkbox" id="estado1" name="estado1" value="New South Wales">
+                            <label for="estado1"> New South Wales</label>
+                            <br>
+                            <input type="checkbox" id="estado2" name="estado2" value="Queensland">
+                            <label for="estado2"> Queensland</label>
+                            <br>
+                            <input type="checkbox" id="estado3" name="estado3" value="Austrália do Sul">
+                            <label for="estado3"> Austrália do Sul</label>
+                            <br>
+                            <input type="checkbox" id="estado4" name="estado4" value="Wellington">
+                            <label for="estado4"> Wellington</label>
+                            <br>
+                            <input type="checkbox" id="estado5" name="estado5" value="Austrália Ocidental">
+                            <label for="estado5"> Austrália Ocidental</label>
+                            <br>
+                            <input type="checkbox" id="estado6" name="estado6" value="Auckland">
+                            <label for="estado6"> Auckland</label>
+                            <br>
+                            <input type="checkbox" id="estado7" name="estado7" value="Victoria">
+                            <label for="estado7"> Victoria</label>
+                            <br>
+                            <input type="checkbox" id="estado8" name="estado8" value="Nelson">
+                            <label for="estado8"> Nelson</label>
+                            <br>
+                            <input type="checkbox" id="estado9" name="estado9" value="Queenstown">
+                            <label for="estado9"> Queenstown</label>
+                            <br>
+                            <input type="checkbox" id="estado10" name="estado10" value="Tasmânia">
+                            <label for="estado10"> Tasmânia</label>
+                            <br><br>
+                        </li>
+
+                        <li>
+                            <p>Qual a cor predominante na bandeira Australiana?</p>
+                            <label for="corBandeira">A cor é :</label>
+                            <input type="color" id="corBandeira" name="corBandeira" value="#ffffff"> .
+                            <br><br>
+                        </li>
+
+                        <li>
+                            <p>Qual a capital da Austrália?</p>
+                            <label for="capital">A capital da Austrália é :</label>
+                            <select id="capital" name="cidade">
+                                <option value="Sydney">Sydney</option>
+                                <option value="Wellington">Wellington</option>
+                                <option value="Camberra">Camberra</option>
+                                <option value="	Nova Gales do Sul">	Nova Gales do Sul</option>
+                            </select> .
+                            <br><br>
+                        </li>
+
+                        <li>
+                            <p>Qual o parque mais importante em Sydney?</p>
+                                O parque mais importante em Sydney é :
+                                <input list="parques" name="parque">
+                                <datalist id="parques">
+                                    <option value="The Domain">
+                                    <option value="Prince Alfred Park">
+                                    <option value="Royal National Park">
+                                    <option value="Moore Park">
+                                    <option value="Royal Botanic Garden">
+                                </datalist> .
+                            <br><br>                            
+                        </li>
+
+                        <li>
+                            <p>Quantos portos tem a cidade de Sydney?</p>
+                            <label for="portos">A cidade de Sydney tem : </label>
+                            <input type="range" min="20" max="100"
+                            name="portos" value="40"
+                            oninput="portosN.value = parseInt(portos.value)">
+                            <output name="portosN" for="portos">40</output> portos.
+                            <br><br>
+                        </li>
+
+                        <li>
+                            <p>Qual o número de telemóvel específico para telefonar para Sydney?</p>
+                            <label for="telemóvel">O número de telemóvel específico para telefonar para Sydney é : </label>
+                            <input type="tel" id="telemóvel" name="telemóvel" placeholder="123 45 67 89" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" size="10"> .
+                            <br><br>
+                        </li>
+
+                        <li>
+                            <p>Complete a seguinte frase.</p>
+                            <label for="frase">A Austrália é a maior </label>
+                            <input type="text" id="frase" name="frase" maxlength="4" size="4"> do mundo.
+                            <br><br>
+                        </li>
+                       </ol>
+                       
+                       <h4>Comentários sobre o Quizz!🔝🔝</h4>
+                       <textarea name="message" rows="7" cols="80" placeholder="Insira um comentário construtivo relativamente ao Quizz!&#128521" required></textarea>
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="Submeter Quizz!">
+                    <br>
+
+                </fieldset>
+            </form>
+
+        </main>
+        <br><br>
+
+        <footer>
+            <center><p>Nome: Pedro Miguel Martins Rocha | Número: a22003766 | Universidade: Universidade Lusófona de Humanidades e Tecnologias | Ano: 2ºAno</p></center>
+        </footer>
+        
+    </body>
+</html>
