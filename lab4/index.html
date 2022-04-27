@@ -2,24 +2,193 @@
 <html lang="pt">
     <head>
         <meta charset="UTF-8">
-        <title>Capitais Europeias!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Pedro Rocha">
+        <meta name="keywords" content="Cidade Europeias">
+        <meta name="description" content="Website sobre Cidades Europeias">
+        <link rel="shortcut icon" type="image/x-icon" href="images/Android-Browser.ico"/>
+        <title>Capitais Europeias</title>
 
         <style>
-            
+            * {box-sizing: border-box;}
+            * {font-family:'Times New Roman', Times, serif;}
+
+            .capitais {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: space round;
+                background-color: rgb(238, 248, 248);
+                padding: 50px;
+            }
+
+            .capitais > div {
+                display: flex;
+                justify-content: space-around;
+                border-radius: 20px;
+                box-shadow: 5px 5px 15px #888888;
+                margin: 10px;
+            }
+
+            .capitais img {
+                border-radius: 20px 0 0 20px;
+                height: 100%;
+            }
+
+            .capitais div div:last-child {
+                width: 150px;
+                background-color: white;
+                padding: 20px;
+                border-radius: 0 20px 20px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .menu {
+                display: flex;
+                background-image: url("images/reykiavik.jpg");
+            }
+
+            .menu a:last-child {
+                margin-left: auto;
+            }
+
+            a {
+                padding: 20px;
+                text-decoration: none;
+                color: rgb(255, 230, 0);
+            }
+
+            a:hover {
+                color: lightgray;
+                font-weight: bold;
+            }
+
+            .dicas {
+                display: flex;
+                justify-content: space-around;
+                align-items: space round;
+                background-color: rgb(238, 248, 248);
+                padding: 50px;
+                flex-flow: row wrap;
+            }
+
+            .dicas div {
+                width: 250px;
+                height: 275px;
+                background-color: white;
+                padding: 10px 20px;
+                border-radius: 20px;
+                box-shadow: 5px 5px 15px #888888;
+                margin: 10px;
+            }
+
         </style>
     </head>
     <body>
-        <header>
-            <h1></h1>
-        </header>
-        
-
-        <nav>
-            
+        <nav class="menu">
+            <a href="#cidades">Cidades europeias</a>
+            <a href="#dicas">Dicas para viajar</a>
+            <a href="#destinos">Destinos de sonho</a>
+            <a href="../index.html">Labs PW</a>
         </nav>
 
         <main>
+            <h1 id="cidades">Capitais Europeias</h1>
+            <div class="capitais">
+                <div>
+                    <div><img src="images/bruxelas.jpg" alt="bruxelas"></div>
+                    <div><p>Bruxelas</p></div>
+                </div>
+                <div>
+                    <div><img src="images/lisboa.jpg" alt="lisboa"></div>
+                    <div><p>Lisboa</p></div>
+                </div>
+                <div>
+                    <div><img src="images/budapeste.jpg" alt="budapeste"></div>
+                    <div><p>Budapeste</p></div>
+                </div>
+                <div>
+                    <div><img src="images/londres.jpg" alt="londres"></div>
+                    <div><p>Londres</p></div>
+                </div>
+                <div>
+                    <div><img src="images/milao.jpg" alt="milao"></div>
+                    <div><p>Milao</p></div>
+                </div>
+                <div>
+                    <div><img src="images/paris.jpg" alt="paris"></div>
+                    <div><p>Paris</p></div>
+                </div>
+                <div>
+                    <div><img src="images/praga.jpg" alt="praga"></div>
+                    <div><p>Praga</p></div>
+                </div>
+                <div>
+                    <div><img src="images/reykiavik.jpg" alt="reykiavik"></div>
+                    <div><p>Reykiavik</p></div>
+                </div>
+                <div>
+                    <div><img src="images/roma.jpg" alt="roma"></div>
+                    <div><p>Roma</p></div>
+                </div>
+                <div>
+                    <div><img src="images/varsovia.jpg" alt="varsovia"></div>
+                    <div><p>Varsovia</p></div>
+                </div>
+                <div>
+                    <div><img src="images/viena.jpg" alt="viena"></div>
+                    <div><p>Viena</p></div>
+                </div>
+                <div>
+                    <div><img src="images/download.jpg" alt="inglaterra"></div>
+                    <div><p>Inglaterra</p></div>
+                </div>
+            </div>
 
+            <h1 id="dicas">Dicas para viajantes</h1>
+            <div class="dicas">
+                <div>
+                    <h1>Viaje devagar🤏🏻</h1>
+                    <p>Viajar não é uma competição! Não é o número de países e cidades que você visita que vai fazer a diferença, mas sim como você vive cada dia da sua experiência.</p>    
+                </div>
+                
+                <div>
+                    <h1>Siga o seu coração❤️</h1>
+                    <p>Pela primeira vez na sua vida você vai ser totalmente livre. Não deixe o seu planeamento prender-te. Os planos servem apenas como uma orientação e não como regras.</p>
+                </div>
+                <div>
+                    <h1>Interagir com os locais🗺️</h1>
+                    <p>Esta é a melhor forma de conhecer uma cultura e também a mais interessante. Interagir com os locais vai trazer descobertas incríveis e momentos memoráveis para a sua viagem.</p>
+                </div>
+                <div>
+                    <h1>Planeia mas não stresses🗺️</h1>
+                    <p>Um certo planeamento faz bem, pra você não apanhar uma temperatura de -30 graus na Europa ou uma chuva torrencial por semanas no Sudeste asiático mas não fique stressado de modo a fazer o plano perfeito.</p>
+                </div>
+                <div>
+                    <h1>Relaxa e seja paciente🙏🏼</h1>
+                    <p>Não adianta ficar stressado com tudo que parece errado. Vai passar por culturas completamente diferentes da sua.</p>
+                </div>
+                <div>
+                    <h1>Não leve muita coisa🧳</h1>
+                    <p>Esqueça o conceito de férias onde leva imensa roupa. Por isso, seja prático, foque no necessário, escolha peças versáteis e deixe espaço, pois vai acabar adquirir alguma lembrança.</p>
+                </div>
+                <div>
+                    <h1>Faça trabalho voluntário🧑‍💼</h1>
+                    <p>Esse tipo de experiência é gratificante, coloca-te em contacto intenso com os locais e ensina-te, igualmente, bastantes coisas.</p>
+                </div>
+                <div>
+                    <h1>Não estejas ansioso😣</h1>
+                    <p>Durante a viagem vai ser comum ficar ansioso para viver novas experiências que deseja muito. Nesses casos, tendemos a pesquisar muito na internet, ver preços e informações.</p>
+                </div>
+            </div>
+
+            <h1 id="destinos">Destinos de sonho</h1>
+            <div>
+                
+            </div>
+                
         </main>
         
     </body>
