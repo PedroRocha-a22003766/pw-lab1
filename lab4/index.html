@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Pedro Rocha">
-        <meta name="keywords" content="Cidade Europeias">
-        <meta name="description" content="Website sobre Cidades Europeias">
+        <meta name="keywords" content="Viagens">
+        <meta name="description" content="Website sobre Viagens">
         <link rel="shortcut icon" type="image/x-icon" href="images/Android-Browser.ico"/>
         <title>Capitais Europeias</title>
 
@@ -47,7 +47,7 @@
 
             .menu {
                 display: flex;
-                background-image: url("images/reykiavik.jpg");
+                background-color: lightcyan;
             }
 
             .menu a:last-child {
@@ -57,7 +57,7 @@
             a {
                 padding: 20px;
                 text-decoration: none;
-                color: rgb(255, 230, 0);
+                color: rgba(255, 230, 0, 0.799);
             }
 
             a:hover {
@@ -82,6 +82,115 @@
                 border-radius: 20px;
                 box-shadow: 5px 5px 15px #888888;
                 margin: 10px;
+            }
+
+            .item1 { 
+                grid-area: algarve; 
+                background-image: url("images/algarve.jpg");
+            }
+
+            .item2 { 
+                grid-area: porto; 
+                background-image: url("images/porto.jpg");
+            }
+
+            .item3 { 
+                grid-area: lisboa; 
+                background-image: url("images/lisboa2.jpg");
+            }
+
+            .item4 { 
+                grid-area: aveiro; 
+                background-image: url("images/aveiro.jpg");
+                height: auto3;
+            }
+
+            .item5 { 
+                grid-area: evora; 
+                background-image: url("images/evora.jpg");
+            }
+
+            .item6 { 
+                grid-area: praia; 
+                background-image: url("images/praia.jpg");
+            }
+
+            .destinos {
+                display: grid;
+                grid-template-areas:
+                'algarve porto lisboa praia praia'
+                'aveiro aveiro evora praia praia';
+                gap: 10px;
+                padding: 10px;
+                background-color: rgba(238, 248, 248, 0.8);
+            }
+            
+            .destinos div {
+                background-color: rgba(255, 255, 255, 0.8);
+                height: 100%;
+                padding: 70px 0;
+                font-size: 25px;
+                gap: 15px;
+            }
+
+            .destinos > div {
+                color: white;
+            }
+
+            div.relative {
+                position: relative;
+                bottom: 70px;    
+                left: 0px;
+                width: 0px; 
+                height: 0px;
+                padding: 0px;
+                font-size: 20px;
+            }
+
+            div.relative2 {
+                position: relative;
+                top: 20px;   
+                left: 0px;
+                width: 0px;   
+                height: 0px;
+                padding: 0px;
+                font-size: 25px;
+            }
+
+            div.relative3 {
+                position: relative;
+                top: 20px;   
+                left: 0px;
+                width: 0px;   
+                height: 0px;
+                padding: 0px;
+            }
+
+            @media (min-width:901px) {
+                .destinos {
+                    display: grid;
+                    grid-template-areas:
+                    'algarve porto lisboa praia praia'
+                    'aveiro aveiro evora praia praia';
+                    gap: 10px;
+                    padding: 10px;
+                    background-color: rgba(238, 248, 248, 0.8);
+                }
+            }
+
+            @media (max-width:900px) {
+                .destinos {
+                    display: grid;
+                    grid-template-areas:
+                    'algarve porto'
+                    'lisboa evora'
+                    'aveiro aveiro'
+                    'praia praia'
+                    'praia praia';
+                    gap: 10px;
+                    padding: 10px;
+                    background-color: rgba(238, 248, 248, 0.8);
+                }
             }
 
         </style>
@@ -185,10 +294,37 @@
             </div>
 
             <h1 id="destinos">Destinos de sonho</h1>
-            <div>
-                
+            <div class="destinos">
+                <div class="item1">
+                    <div class="relative">Praia</div>
+                    <div class="relative2">Algarve</div>
+                </div>
+
+                <div class="item2">
+                    <div class="relative">Lazer</div>
+                    <div class="relative2">Porto</div>
+                </div>
+
+                <div class="item3">
+                    <div class="relative">Lazer</div>
+                    <div class="relative2">Lisboa</div>
+                </div>
+
+                <div class="item4">
+                    <div class="relative">Passeio</div>
+                    <div class="relative2">Aveiro</div>
+                </div>
+
+                <div class="item5">
+                    <div class="relative">História</div>
+                    <div class="relative2">Évora</div>
+                </div>
+
+                <div class="item6">
+                    <div class="relative"></div>
+                    <div class="absolute"></div>
+                </div>
             </div>
-                
         </main>
         
     </body>
