@@ -20,11 +20,8 @@ class Cadeira(models.Model):
     anoLetivoFrequentado = models.IntegerField(default=2020)
     topicosAbordados = models.CharField(default = "",blank=True, max_length=1024)
     ranking = models.IntegerField(default=3,choices = [(1, "1 estrela"), (2, "2 estrelas"),(3, "3 estrelas"), (4, "4 estrelas"), (5, "5 estrelas")])
-    
     linkCadeira = models.URLField(default="", blank=True)
     
-
-
     def __str__(self):
         return self.nome
 
