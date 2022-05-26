@@ -34,8 +34,9 @@ def apresentacao_view(request):
 
 def cadeira_view(request, id):
 	cadeira = Cadeira.objects.get(pk = id)
+	projetos = Projeto.objects.filter(cadeira = id)
 
-	return render(request, 'portfolio/cadeira.html', {'cadeira': cadeira})
+	return render(request, 'portfolio/cadeira.html', {'cadeira': cadeira, 'projetos': projetos, 'professores' : cadeira.professores.all() })
 
 
 def projetos_view(request):
